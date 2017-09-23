@@ -325,7 +325,10 @@ Object.defineProperties(GMPixi.extra.Board.prototype, {
         value: function() {
             for(var x=0; x<this.c.c; ++x) {
                 for(var y=0; y<this.c.r; ++y) {
-                    this.block[x][y].gem.type = GMPixi.Math.random(1, 6);
+                    if(!this.block[x][y].gem.animate.destroy) {
+                        this.block[x][y].gem.animate.destroy = true;
+                    }
+//                    this.block[x][y].gem.type = GMPixi.Math.random(1, 6);
                 }
             }
         }
