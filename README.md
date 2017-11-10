@@ -10,5 +10,7 @@ just like candy crush/bejeweled where you drag the gem to what direction you lik
 
 
 
+DISCLAIMER: Does not own the sprites used.
+
 
 
